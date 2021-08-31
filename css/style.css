@@ -11,6 +11,14 @@ html {
   color: #FFF;
 }
 
+main {
+  background: #311213;
+}
+
+a {
+  text-decoration: none;
+}
+
 .navbar {
   background-color: #5F2325;
   display: flex;
@@ -40,4 +48,111 @@ html {
 .navbar__item-caps {
   font-size: 1.6rem;
   font-weight: 900;
+}
+
+.parallax {
+  background-image: url("../img/background1.jpg");
+  background-color: #311213;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: lighten;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column-reverse;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.parallax__social {
+  position: absolute;
+  bottom: 2rem;
+}
+
+.parallax__social img {
+  width: 2.8rem;
+  margin: 1rem;
+}
+
+.parallax__images img {
+  position: absolute;
+  width: 70%;
+}
+
+.parallax__images .cloud1 {
+  top: 6rem;
+  left: -2rem;
+}
+
+.parallax__images .cloud2 {
+  top: 4rem;
+  right: -12rem;
+}
+
+.parallax__images .ship {
+  width: 100%;
+  top: 12rem;
+  right: 5%;
+}
+
+.parallax__images .captain-marvel {
+  width: 60%;
+  top: 16rem;
+  right: 20%;
+}
+
+.about {
+  width: 100%;
+}
+
+.about__img-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-image: url("../img/background2.png");
+  background-color: #311213;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: lighten;
+  background-position: bottom;
+}
+
+.about__logo {
+  width: 90%;
+  margin: 2rem;
+}
+
+.about__captain-marvel {
+  width: 30%;
+  margin: auto;
+}
+
+.about__txt-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: rgba(95, 35, 37, 0.4);
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+  margin-bottom: 4rem;
+}
+
+.about__txt, .about__btn {
+  font-size: 1.2rem;
+  line-height: 3rem;
+  letter-spacing: .6rem;
+}
+
+.about__btn {
+  background-color: #311213;
+  border-radius: 16px;
+  color: #FFF;
+  padding: 1rem 1.2rem;
+  margin: 2rem 0;
 }
