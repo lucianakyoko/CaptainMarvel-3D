@@ -1,0 +1,32 @@
+.navbar {
+  background-color: $color-secondary;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  list-style: none;
+
+  width: 100%;
+  height: 16vh;
+
+  &__item {
+    img {
+      width: 5rem;
+      filter: $drop-shadow;
+    }
+
+    font-size: 1.2rem;
+    letter-spacing: .8rem;
+    text-transform: uppercase;
+
+    &:last-child{
+      margin-top: 1rem;
+    }
+  }
+
+  &__item-caps {
+    font-size: 1.6rem;
+    font-weight: 900;
+  }
+}
