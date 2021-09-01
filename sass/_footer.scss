@@ -1,0 +1,33 @@
+.footer {
+  background: $color-secondary;
+  padding: 2rem;
+
+  @include flex-center;
+  flex-direction: column;
+
+  &__paragraph {
+    font-size: 1.2rem;
+    letter-spacing: .24rem;
+    text-align: center;
+    margin-bottom: 1.6rem;
+    
+    a {
+      color: $color-tertiary;
+      font-weight: 900;
+      letter-spacing: .4rem;
+    }
+  }
+
+  &__social-icon-list {
+    @include flex-center;
+ 
+    .social__icon-item img{
+      margin: 1rem;
+      transition: $transition;
+    }
+
+    .social__icon-item img:hover {
+      filter: $drop-shadow;
+    }
+  }
+}
