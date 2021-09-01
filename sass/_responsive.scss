@@ -1,0 +1,132 @@
+@media screen and (min-width: 767px) {
+  .navbar {
+    flex-direction: row;
+    justify-content: space-around;
+
+    &__item {
+      img {
+        width: 8rem;
+      }
+
+      font-size: 1.8rem;
+    }
+
+    &__item-caps {
+      font-size: 2.4rem;
+    }
+  }
+
+  .parallax {
+    &__images {
+      .ship {
+        width: 90%;
+        top: 10rem;
+      }
+      .captain-marvel {
+        width: 25%;
+        right: 35%;
+      }
+    }
+  }
+
+  .about {
+    grid-template-columns: 75% 25%;
+    grid-template-rows: 25% 75%;
+
+    padding: 2rem 4rem;
+
+    &__logo {
+      grid-column: 1 / 3;
+      grid-row: 1 / 2;
+      width: 50%;  
+      margin: 4rem auto 16rem auto;
+    }
+
+    &__captain-marvel {
+      grid-column: 2 / 4;
+      grid-row: 2 / 2;
+      width: 80%;
+    }
+
+    &__txt-box {
+      align-items: flex-start;
+      grid-column: 1 / 2;
+      grid-row: 2 / 2;
+      height: 80%;
+      border-radius: $border-radius;
+    }
+  }
+}
+
+@media screen and (min-width: 1023px) {
+  header {
+    width: 100%;
+    background-color: $color-secondary;
+  }
+  .navbar {
+    width: 90%;
+    margin: auto;
+    justify-content: space-between;
+
+    &__item {
+      img {
+        width: 12rem;
+      }
+
+      font-size: 2.4rem;
+    }
+
+    &__item-caps {
+      font-size: 3.6rem;
+    }
+  }
+
+  .parallax {
+    &__images {
+      .cloud1 {
+        top: 0;
+        left: -4rem;
+        width: 50%;
+      }
+      
+      .cloud2 {
+        top: 0;
+        width: 50%;
+      }
+      .ship {
+        width: 80%;
+      }
+      .captain-marvel {
+        width: 20%;
+        right: 45%;
+      }
+    }
+  }
+
+  .about {
+    grid-template-columns: 75% 25%;
+    grid-template-rows: 50% 50%;
+    padding: 8rem;
+
+    &__logo {
+      grid-column: 1 / 2;
+      grid-row: 1 / 2;
+      width: 70%;
+      margin: 4rem auto;
+    }
+
+    &__captain-marvel {
+      grid-column: 2 / 3;
+      grid-row: 1/ 3;
+      width: 70%;
+    }
+
+    &__txt-box {
+      grid-column: 1 / 2;
+      grid-row: 2 / 3;
+      width: 80%; height: 100%;
+      margin: auto;
+      padding: 4rem;
+    }
+  }
+}
