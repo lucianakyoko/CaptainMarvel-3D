@@ -1,4 +1,5 @@
-gsap.to('[data-layer3]', {
+//Parallax effect using scrollTrigger library:
+gsap.to('[data-ship]', {
   scrollTrigger: {
     scrub: true
   },
@@ -7,7 +8,7 @@ gsap.to('[data-layer3]', {
   scale: 4
 });
 
-gsap.to('[data-layer4]', {
+gsap.to('[data-captain]', {
   scrollTrigger: {
     scrub: true
   },
@@ -15,4 +16,3 @@ gsap.to('[data-layer4]', {
   y: -1800,
   scale: 2
 });
-

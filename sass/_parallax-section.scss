@@ -1,6 +1,5 @@
 .parallax {
   background-image: url('../img/background1.jpg');
-  
   @include background;
   background-position: center;
   @include flex-center;
