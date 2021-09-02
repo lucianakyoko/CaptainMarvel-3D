@@ -22,6 +22,9 @@
     grid-area: captain;
     width: 30%;
     margin: auto;
+
+    animation: flying 5s ease infinite alternate both;
+
   }
 
   &__txt-box {

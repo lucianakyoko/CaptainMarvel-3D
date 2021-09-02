@@ -9,6 +9,7 @@ $transition: all 1s ease-in-out;
 
 @mixin background {
   background-color: $color-primary;
+  background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
   background-blend-mode: lighten;
@@ -44,5 +45,4 @@ ul {
   list-style: none;
 }
 
-
-@import 'navbar', 'parallax-section', 'about-section', 'footer', 'responsive'
+@import 'navbar', 'parallax-section', 'about-section', 'footer', 'responsive', 'animation'

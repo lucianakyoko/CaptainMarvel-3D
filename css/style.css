@@ -59,6 +59,7 @@ ul {
 .parallax {
   background-image: url("../img/background1.jpg");
   background-color: #311213;
+  background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
   background-blend-mode: lighten;
@@ -81,11 +82,13 @@ ul {
 .parallax__images .cloud1 {
   top: 6rem;
   left: -2rem;
+  animation: cloud 20s  ease-in-out infinite alternate both;
 }
 
 .parallax__images .cloud2 {
   top: 4rem;
   right: -12rem;
+  animation: cloud 12s  ease-in-out infinite alternate both;
 }
 
 .parallax__images .ship {
@@ -96,7 +99,7 @@ ul {
 
 .parallax__images .captain-marvel {
   width: 60%;
-  top: 16rem;
+  bottom: -10%;
   right: 20%;
 }
 
@@ -113,6 +116,7 @@ ul {
 .about {
   background-image: url("../img/background2.png");
   background-color: #311213;
+  background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
   background-blend-mode: lighten;
@@ -133,6 +137,7 @@ ul {
   grid-area: captain;
   width: 30%;
   margin: auto;
+  animation: flying 5s ease infinite alternate both;
 }
 
 .about__txt-box {
@@ -310,5 +315,23 @@ ul {
     height: 100%;
     margin: auto;
     padding: 4rem;
+  }
+}
+
+@keyframes flying {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(60px);
+  }
+}
+
+@keyframes cloud {
+  from {
+    transform: translateX(-10%);
+  }
+  to {
+    transform: translateX(10%);
   }
 }

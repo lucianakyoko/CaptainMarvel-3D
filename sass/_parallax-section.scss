@@ -1,7 +1,7 @@
 .parallax {
   background-image: url('../img/background1.jpg');
+  
   @include background;
-
   background-position: center;
   @include flex-center;
   flex-direction: column;
@@ -21,11 +21,15 @@
     .cloud1 {
       top: 6rem;
       left: -2rem;
+
+      animation: cloud 20s  ease-in-out infinite alternate both;
     }
 
     .cloud2 {
       top: 4rem;
       right: -12rem;
+
+      animation: cloud 12s  ease-in-out infinite alternate both;
     }
 
     .ship {
@@ -36,14 +40,13 @@
 
     .captain-marvel {
       width: 60%;
-      top: 16rem;
+      bottom: -10%;
       right: 20%;
     }
   }
 }
 
 .parallax::before {
- 
   content: '';
   position: absolute;
   bottom: 0;
@@ -51,5 +54,4 @@
   height: 100px;
   background: linear-gradient(to top, $color-primary, transparent);
   z-index: 8;
-  
 }

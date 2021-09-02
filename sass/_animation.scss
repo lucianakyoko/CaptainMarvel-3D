@@ -1,0 +1,19 @@
+@keyframes flying {
+  from{
+    transform: translateY(0px);
+  }
+
+  to{
+    transform: translateY(60px);
+  }
+}
+
+@keyframes cloud {
+  from{
+    transform: translateX(-10%);
+  }
+
+  to{
+    transform: translateX(10%);
+  }
+}
