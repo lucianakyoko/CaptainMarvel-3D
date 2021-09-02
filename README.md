@@ -23,4 +23,6 @@ ____
 ## JavaScript:
  - uso da biblioteca scrollTrigger
 
-## Link da página:[aqui](https://captainmarvel-parallax.netlify.app)
+## Preview da página
+![Preview da página](https://github.com/lucianakyoko/CaptainMarvel-3D/blob/main/captainmarvel.gif)
+
